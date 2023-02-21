@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'Friender.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Friender',
+        'NAME': 'Friender_app',
         'USER': 'CHAMOMILE',
         'PASSWORD': '02082002',
         'HOST': '127.0.0.1',

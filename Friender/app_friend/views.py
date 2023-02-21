@@ -17,7 +17,10 @@ def add_user(request):
         Users.objects.create(name=request.POST['name'],
                              surname=request.POST['surname'],
                              age=request.POST['age'],
-                             sex=request.POST['sex']
+                             sex=request.POST['sex'],
+                             phone=request.POST['phone'],
+                             msg=request.POST['msg'],
+
                              )
         redirect('/app/main')
     return render(request, 'add_user.html')
