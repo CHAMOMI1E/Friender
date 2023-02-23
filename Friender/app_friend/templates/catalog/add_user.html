@@ -44,25 +44,37 @@
                       <!-- Name -->
                       <div class="form-group label-floating">
                         <label class="control-label" for="name">Name</label>
-                        <input class="form-control form-control-lg" type="text" id="name" name="name" required data-error="Please enter your name">
+                        <input class="form-control form-control-lg" type="text" id="name" name={{Users.name}} required data-error="Please enter your name">
                         <div class="help-block with-errors"></div>
                       </div>
                       <!-- surname -->
                       <div class="form-group label-floating">
                         <label class="control-label" for="surname">Surname</label>
-                        <input class="form-control form-control-lg" type="text" id="surname" name="surname" required data-error="Please enter your Email">
+                        <input class="form-control form-control-lg" type="text" id="surname" name={{Users.surname}} required data-error="Please enter your Email">
                         <div class="help-block with-errors"></div>
                       </div>
                       <!-- Age -->
                       <div class="form-group label-floating">
                         <label class="control-label" for="age">Age</label>
-                        <input class="form-control form-control-lg" type="text" id="age" name="age" required data-error="Please enter your message subject">
+                        <input class="form-control form-control-lg" type="text" id="age" name={{Users.age}} required data-error="Please enter your message subject">
                         <div class="help-block with-errors"></div>
                       </div>
                       <!-- Sex -->
                       <div class="form-group label-floating">
                           <label for="sex" class="control-label">Sex</label>
-                          <input class="form-control form-control-lg" type="text" id="sex" name="sex" placeholder="М\Ж" required data-error="Please enter your message subject">
+                          <input class="form-control form-control-lg" type="text" id="sex" name={{Users.sex}} placeholder="М\Ж" required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                     <!-- Phone -->
+                      <div class="form-group label-floating">
+                          <label for="phone" class="control-label">Phone</label>
+                          <input class="form-control form-control-lg" type="text" id="phone" name={{Users.phone}} required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                     <!-- MSG -->
+                      <div class="form-group label-floating">
+                          <label for="msg" class="control-label">MSG</label>
+                          <input class="form-control form-control-lg" type="text" id="msg" name={{Users.msg}} required data-error="Please enter your message subject">
                         <div class="help-block with-errors"></div>
                       </div>
                       <!-- Form Submit -->
