@@ -23,6 +23,15 @@
 
       </ul>
     </div>
+        {% if request.user.is_authenticated %}
+        <li class="d-flex"> {{ user.username }} | <a class="nav-link active" href="{% url 'logout' %}">выйти</a></li>
+        {% else %}
+           <li class="d-flex">
+          <a class="nav-link active" href="#">регистрация</a>
+
+               <a class="nav-link active" href="#">авторизация</a>
+        </li>
+        {% endif %}
   </div>
 
 </nav>

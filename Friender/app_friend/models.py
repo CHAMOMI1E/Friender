@@ -11,13 +11,12 @@ class Users(models.Model):
     hobbies = models.ManyToManyField('Hobbies', verbose_name="list of hobbies")
     msg = models.CharField(max_length=100, verbose_name="MSG", null=False)
     favorite_place_name = models.ForeignKey('Cafe', on_delete=models.CASCADE, default='')
-    work = models.ForeignKey('Work', on_delete=models.CASCADE, null=True,default='')
+    work = models.ForeignKey('Work', on_delete=models.CASCADE, null=True, default='')
 
     def __str__(self):
         return self.name
 
     class Meta:
-
         indexes = [
             models.Index(fields=['sex'], name='sex_idx')
         ]
@@ -26,16 +25,22 @@ class Users(models.Model):
 class Hobbies(models.Model):
     name = models.CharField(max_length=30)
 
+    def __str__(self):
+        return self.name
+
 
 class Cafe(models.Model):
     name = models.CharField(max_length=40)
     adres = models.CharField(max_length=40)
     average_amount = models.IntegerField()
 
+    def __str__(self):
+        return self.name
+
 
 class Work(models.Model):
     name = models.CharField(max_length=40)
-    pilot_salary = models.IntegerField(null = True)
+    pilot_salary = models.IntegerField(null=True)
 
     def __str__(self):
         return self.name
