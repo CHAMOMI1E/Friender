@@ -77,13 +77,25 @@
                           <input class="form-control form-control-lg" type="text" id="msg" name={{Users.msg}} required data-error="Please enter your message subject">
                         <div class="help-block with-errors"></div>
                       </div>
+                     <!--photo-->
+                     <div>
+
+
+                        <label class="required" for="id_photo">Photo</label>
+
+                            <input type="file" name={{Users.photo}} accept="image/*" required id="id_photo">
+
+
+
+                </div>
                       <!-- Form Submit -->
 
                       <div class="form-submit mt-5">
-                        <button type="submite" class="btn btn-outline-dark">Зарегистрировать</button>
+                        <button type="submit" class="btn btn-outline-dark">Зарегистрировать</button>
                           <div id="msgSubmit" class="h3 text-center hidden"></div>
                           <div class="clearfix"></div>
                       </div>
+
                   </form>
               </div>
           </div>

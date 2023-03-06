@@ -12,6 +12,7 @@ class Users(models.Model):
     msg = models.CharField(max_length=100, verbose_name="MSG", null=False)
     favorite_place_name = models.ForeignKey('Cafe', on_delete=models.CASCADE, default='')
     work = models.ForeignKey('Work', on_delete=models.CASCADE, null=True, default='')
+    photo = models.ImageField(upload_to='friender_photo', null=True)
 
     def __str__(self):
         return self.name
