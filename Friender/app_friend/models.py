@@ -46,8 +46,4 @@ class Work(models.Model):
     def __str__(self):
         return self.name
 
-    # class Meta:
-    #     abstract = True
-    #     indexes = [
-    #         models.Index(filds=['pilot_salary'], name='pilot_salary_idx')
-    #     ]
+
