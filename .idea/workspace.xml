@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e942b396-f5cf-465a-b5e2-4a8341a61658" name="Changes" comment="add admin and media">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Friender.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Friender.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Friender/app_friend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Friender/app_friend/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Friender/app_friend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Friender/app_friend/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Friender/requirments" beforeDir="false" afterPath="$PROJECT_DIR$/Friender/requirments" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
