@@ -32,16 +32,18 @@ def main(request):
 #         redirect('/app/main')
 #     return render(request, 'add_user.html')
 
+# class add_user(CreateView):
+#     template_name = 'add_user.html'
+#     model = 'Users'
+#     fields = ['name', 'surname', 'age', 'sex', 'phone', 'hobbies', 'msg', 'favorite_place_name', 'work', 'photo']
+#     success_url = reverse_lazy("main")
+
+
 class add_user(CreateView):
-    template_name = 'add_user.html'
-    model = 'Users'
+    template_name = "add_user.html"
+    model = Users
     fields = ['name', 'surname', 'age', 'sex', 'phone', 'hobbies', 'msg', 'favorite_place_name', 'work', 'photo']
     success_url = reverse_lazy("main")
-
-
-class MyView(ListView, PermissionRequiredMixin):
-    template_name = "form.html"
-    model = Users
     context_object_name = "users"
 
 
